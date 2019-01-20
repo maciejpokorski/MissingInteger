@@ -14,6 +14,8 @@ const solution = (A) => {
     for (let index = 0; index < input.length; index++) {
         if(input[index] === smallestMissingInteger){
             smallestMissingInteger++;
+        }else if(smallestMissingInteger < input[index]){
+            return smallestMissingInteger;
         }
     }
 
