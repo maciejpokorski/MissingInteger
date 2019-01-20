@@ -1,22 +1,17 @@
-const isUnique = (item, index, array) => array.indexOf(item) == index;
+const sortArr = (A) => {
 
-const sortAndUnique = (A) => {
-    const uniq = A.filter(isUnique)
-
-    return uniq.sort((a, b) => a - b);
+    return A.sort((a, b) => a - b);
 }
 
 const solution = (A) => {
     let smallestMissingInteger = 1;
     
-    const input = sortAndUnique(A);
+    const input = sortArr(A);
 
     for (let index = 0; index < input.length; index++) {
-        if(input[index] === smallestMissingInteger){
-            smallestMissingInteger++;
-        }else if(smallestMissingInteger < input[index]){
-            return smallestMissingInteger;
-        }
+      if(input[index] > -1 && input[index] === smallestMissingInteger){
+          smallestMissingInteger++;
+      }
     }
 
     return smallestMissingInteger;
