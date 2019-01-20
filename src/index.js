@@ -3,7 +3,7 @@ const isUnique = (item, index, array) => array.indexOf(item) == index;
 const sortAndUnique = (A) => {
     const uniq = A.filter(isUnique)
 
-    return uniq.sort();
+    return uniq.sort((a, b) => a - b);
 }
 
 const solution = (A) => {
