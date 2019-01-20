@@ -1,0 +1,29 @@
+{
+  "name": "missinginteger",
+  "version": "1.0.0",
+  "description": "Codility couting elements lesson",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/index.js -d dest/"
+  },
+  "author": "Maciej Pokorski",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "flow-bin": "^0.89.0",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "regenerator-runtime": "^0.13.1"
+  }
+}
