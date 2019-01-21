@@ -1,3 +1,5 @@
+//default sort is alphabetical so after sort we can get for example this output: 1 100 7.
+//here number sort implementation
 const sortArr : Array<number> = (A : Array<number>) => {
 
     return A.sort((a, b) => a - b);
